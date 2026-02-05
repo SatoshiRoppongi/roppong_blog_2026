@@ -1,0 +1,121 @@
+/* Old blog banner */
+.old-blog-banner {
+  background: linear-gradient(135deg, #e53935, #d32f2f);
+  color: #fff;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 100;
+}
+
+.old-blog-banner a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.old-blog-banner a:hover {
+  opacity: 0.85;
+}
+
+/* Pagefind UI overrides */
+.pagefind-search {
+  margin-top: 1rem;
+}
+
+.pagefind-ui .pagefind-ui__search-input {
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--entry);
+  color: var(--primary);
+}
+
+.pagefind-ui .pagefind-ui__result-link {
+  color: var(--primary);
+}
+
+.pagefind-ui .pagefind-ui__result-excerpt {
+  color: var(--secondary);
+}
+
+/* SNS link buttons */
+.sns-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.sns-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: opacity 0.2s ease;
+  min-width: 120px;
+}
+
+.sns-button:hover {
+  opacity: 0.85;
+  color: #fff;
+}
+
+.sns-github {
+  background-color: #333;
+}
+
+.sns-youtube {
+  background-color: #ff0000;
+}
+
+.sns-twitter {
+  background-color: #000;
+}
+
+.sns-strava {
+  background-color: #fc4c02;
+}
+
+/* Google Form container */
+.google-form-container {
+  margin: 1rem 0;
+}
+
+.google-form-container iframe {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* YouTube container */
+.youtube-container {
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Image figure */
+figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--secondary);
+}

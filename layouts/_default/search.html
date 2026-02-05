@@ -1,0 +1,31 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+<div id="search" class="pagefind-search">
+  <div id="pagefind-ui"></div>
+</div>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    new PagefindUI({
+      element: "#pagefind-ui",
+      showSubResults: true,
+      translations: {
+        placeholder: "検索キーワードを入力...",
+        zero_results: "「[SEARCH_TERM]」に一致する結果はありません",
+        many_results: "[COUNT] 件の結果",
+        one_result: "1 件の結果",
+        alt_search: "「[SEARCH_TERM]」の結果はありません。代わりに [DIFFERENT_TERM] で検索しています",
+        search_suggestion: "「[SEARCH_TERM]」の結果はありません。以下のキーワードで試してみてください:",
+        searching: "検索中..."
+      }
+    });
+  });
+</script>
+
+{{- end }}

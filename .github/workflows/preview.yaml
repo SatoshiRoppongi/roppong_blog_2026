@@ -1,0 +1,53 @@
+name: Preview Deploy
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  TZ: Asia/Tokyo
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.146.0"
+          extended: true
+
+      - name: Build with Hugo (including drafts)
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --buildDrafts \
+            --baseURL "https://satoshiroppongi.github.io/roppong_blog_2026/preview/"
+
+      - name: Build Pagefind index
+        run: npx pagefind --site public --root-selector "main"
+
+      - name: Deploy to gh-pages/preview
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          destination_dir: preview

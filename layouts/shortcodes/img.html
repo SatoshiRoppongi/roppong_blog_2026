@@ -1,0 +1,25 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $caption := .Get "caption" | default "" }}
+
+{{ $img := .Page.Resources.GetMatch $src }}
+{{ if $img }}
+  {{ $webp := $img.Process "webp" }}
+  <figure>
+    <picture>
+      <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+      <img
+        src="{{ $img.RelPermalink }}"
+        alt="{{ $alt }}"
+        loading="lazy"
+        decoding="async"
+      >
+    </picture>
+    {{ with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+{{ else }}
+  <figure>
+    <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+    {{ with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+{{ end }}

@@ -1,0 +1,10 @@
+<!-- Old blog banner (inserted at top of body via JS) -->
+<script>
+(function() {
+  if (document.querySelector('.old-blog-banner')) return;
+  var banner = document.createElement('div');
+  banner.className = 'old-blog-banner';
+  banner.innerHTML = '過去の記事は <a href="https://roppong-blog.web.app">旧ブログ</a> でご覧いただけます';
+  document.body.insertBefore(banner, document.body.firstChild);
+})();
+</script>
