@@ -2,7 +2,7 @@ baseURL: "https://roppong.com/"
 languageCode: ja
 title: "roppong.com"
 theme: PaperMod
-copyright: "© 2026 Satoshi Roppongi. All rights reserved."
+copyright: "© 2026 ろっぽん. All rights reserved."
 pagination:
   pagerSize: 10
 enableRobotsTXT: true
@@ -33,7 +33,7 @@ params:
   homeInfoParams:
     Title: "roppong.com"
     Content: >
-      ソフトウェアエンジニアの六本木 聡のブログです。技術ネタや日常について書いています。
+      ソフトウェアエンジニアのろっぽんのブログです。技術ネタや日常について書いています。
 
 
       過去の記事は [旧ブログ (roppong-blog.web.app)](https://roppong-blog.web.app) でご覧いただけます。
@@ -42,17 +42,17 @@ params:
     - name: github
       url: "https://github.com/SatoshiRoppongi"
     - name: youtube
-      url: "https://www.youtube.com/@SatoshiRoppongi"
+      url: "https://www.youtube.com/user/s6hori"
     - name: x
-      url: "https://x.com/If_and_and"
+      url: "https://twitter.com/roppong3"
     - name: strava
-      url: "https://www.strava.com/athletes/SatoshiRoppongi"
+      url: "https://www.strava.com/athletes/43984091"
 
   assets:
-    favicon: "/favicon.ico"
-    favicon16x16: "/favicon-16x16.png"
-    favicon32x32: "/favicon-32x32.png"
-    apple_touch_icon: "/apple-touch-icon.png"
+    favicon: "/images/profile.gif"
+    favicon16x16: "/images/profile.gif"
+    favicon32x32: "/images/profile.gif"
+    apple_touch_icon: "/images/profile.gif"
 
   label:
     text: "roppong.com"

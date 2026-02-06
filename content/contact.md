@@ -10,4 +10,4 @@ ShowBreadCrumbs: false
 
 お問い合わせは下記フォームからお願いいたします。
 
-{{< google-form "FORM_ID" >}}
+{{< google-form "1FAIpQLSet1VwDffMIxZKYoxfQkDl8PZ1UnTLGK2806X5wCPeRrb-qbQ" >}}

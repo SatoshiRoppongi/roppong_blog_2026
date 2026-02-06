@@ -34,12 +34,37 @@
   color: var(--primary);
 }
 
+/* Dark mode: make search input text more visible */
+[data-theme="dark"] .pagefind-ui .pagefind-ui__search-input,
+:root:not([data-theme="light"]) .pagefind-ui .pagefind-ui__search-input {
+  color: #fff;
+  background: #2a2a2a;
+}
+
+[data-theme="dark"] .pagefind-ui .pagefind-ui__search-input::placeholder,
+:root:not([data-theme="light"]) .pagefind-ui .pagefind-ui__search-input::placeholder {
+  color: #aaa;
+}
+
 .pagefind-ui .pagefind-ui__result-link {
   color: var(--primary);
 }
 
 .pagefind-ui .pagefind-ui__result-excerpt {
   color: var(--secondary);
+}
+
+/* Profile image */
+.profile-image {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* SNS link buttons */

@@ -8,9 +8,14 @@ ShowReadingTime: false
 ShowBreadCrumbs: false
 ---
 
-## 六本木 聡 (Satoshi Roppongi)
+<div class="profile-image">
+  <img src="/images/profile.gif" alt="ろっぽん" />
+</div>
 
-ソフトウェアエンジニア。技術ネタや日常について発信しています。
+## ろっぽん
+
+システムエンジニアです。主にアウトプットの練習としてこちらのブログで自由気ままに発信しています。
+興味分野は暗号通貨、AI、フロントエンド技術です。趣味はジョギングです。速くなりたい。
 
 ---
 
@@ -20,13 +25,13 @@ ShowBreadCrumbs: false
   <a href="https://github.com/SatoshiRoppongi" target="_blank" rel="noopener noreferrer" class="sns-button sns-github">
     GitHub
   </a>
-  <a href="https://www.youtube.com/@SatoshiRoppongi" target="_blank" rel="noopener noreferrer" class="sns-button sns-youtube">
+  <a href="https://www.youtube.com/user/s6hori" target="_blank" rel="noopener noreferrer" class="sns-button sns-youtube">
     YouTube
   </a>
-  <a href="https://x.com/If_and_and" target="_blank" rel="noopener noreferrer" class="sns-button sns-twitter">
+  <a href="https://twitter.com/roppong3" target="_blank" rel="noopener noreferrer" class="sns-button sns-twitter">
     X (Twitter)
   </a>
-  <a href="https://www.strava.com/athletes/SatoshiRoppongi" target="_blank" rel="noopener noreferrer" class="sns-button sns-strava">
+  <a href="https://www.strava.com/athletes/43984091" target="_blank" rel="noopener noreferrer" class="sns-button sns-strava">
     Strava
   </a>
 </div>
