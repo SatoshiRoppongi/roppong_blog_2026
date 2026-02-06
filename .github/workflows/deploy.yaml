@@ -47,7 +47,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://roppong.com/"
 
       - name: Build Pagefind index
         run: npx pagefind --site public --root-selector "main"
