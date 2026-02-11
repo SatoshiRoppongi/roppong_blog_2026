@@ -2,7 +2,7 @@
 title: "さよならunihertz"
 date: 2026-02-11T13:58:18Z
 lastmod: 2026-02-11T13:58:18Z
-draft: true
+draft: false
 description: "unihertz製品からgoogle pixelに乗り換えました。"
 summary: "uniherz製品からgoogle pixelに乗り換えた記録です。"
 tags: ["Unihertz", "スマホ", "Android", "Pixel"]
