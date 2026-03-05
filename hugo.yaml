@@ -77,8 +77,8 @@ params:
 
   analytics:
     google:
-      SiteVerificationTag: ""
       id: "G-RJ4HG4XLY5"     # ここにIDを入れる
+googleAnalytics: G-RJ4HG4XLY5
 
 menu:
   main:
